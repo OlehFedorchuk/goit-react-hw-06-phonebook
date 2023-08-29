@@ -7,11 +7,13 @@ export const ContactList = ({ contacts, onDeleteContact, filter }) => {
     contact.name.toLowerCase().includes(filter.toLowerCase().trim())
   );
 
-  const contactElem = filterContact.map(contact => <ContactItem
-    key={contact.id}
-    contact={contact}
-    onDeleteContact={onDeleteContact}
-  />);
+  const contactElem = filterContact.map(contact => (
+    <ContactItem
+      key={contact.id}
+      contact={contact}
+      onDeleteContact={onDeleteContact}
+    />
+  ));
   
   return (
     <div>
@@ -19,8 +21,6 @@ export const ContactList = ({ contacts, onDeleteContact, filter }) => {
     </div>
   );
 };
-
-
 
 ContactList.propTypes = {
   contacts: PropTypes.array.isRequired,
