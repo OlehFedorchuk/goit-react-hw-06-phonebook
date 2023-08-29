@@ -14,7 +14,7 @@ export const ContactList = ({ contacts, onDeleteContact, filter }) => {
   />);
   
   return (
-    <div>
+    <div className='li'>
       {contactElem}
     </div>
   );

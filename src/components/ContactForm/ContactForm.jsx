@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
-
 export const ContactForm = ({onAddContact}) => {
   const [contact, setContact] = useState({name: '', number: '',})
 
@@ -13,11 +12,6 @@ export const ContactForm = ({onAddContact}) => {
     const number = contact.number;
 
     onAddContact({ id, name, number });
-
-    // this.setState({
-    //   name: '',
-    //   number: '',
-    // });
     setContact({name: '', number: '',})
   };
 

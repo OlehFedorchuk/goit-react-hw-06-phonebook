@@ -5,6 +5,7 @@ import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import { useSelector } from "react-redux";
 import { useDispatch } from 'react-redux';
+import './App.css';
 
 import { addContacts, deleteContacts, filterAction } from 'redux/actions';
 

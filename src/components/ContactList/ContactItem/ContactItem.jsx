@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 export const ContactItem = ({ contact, onDeleteContact }) => {
   return (
-    <div>
+    <div className='div'>
       <span>{contact.name}</span>
       <span> {contact.number}</span>
-      <button onClick={() => onDeleteContact(contact.id)}>Delete</button>
+      <button className='btnDelete' onClick={() => onDeleteContact(contact.id)}>Delete</button>
     </div>
   );
 };
