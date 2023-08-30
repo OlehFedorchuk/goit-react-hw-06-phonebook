@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 export const Filter = ({ onFilter }) => {
@@ -18,8 +17,3 @@ export const Filter = ({ onFilter }) => {
       </label>
     );
 }
-
-Filter.propTypes = {
-    onFilter: PropTypes.func.isRequired,
-    filter: PropTypes.string,
-  };

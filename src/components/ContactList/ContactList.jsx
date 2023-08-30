@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { ContactItem } from './ContactItem/ContactItem';
 
 export const ContactList = ({ contacts, onDeleteContact, filter }) => {
@@ -18,11 +17,4 @@ export const ContactList = ({ contacts, onDeleteContact, filter }) => {
       {contactElem}
     </div>
   );
-};
-
-
-
-ContactList.propTypes = {
-  contacts: PropTypes.array.isRequired,
-  onDeleteContact: PropTypes.func.isRequired,
 };

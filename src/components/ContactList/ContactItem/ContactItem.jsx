@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 export const ContactItem = ({ contact, onDeleteContact }) => {
   return (
     <div className='div'>
@@ -11,11 +9,3 @@ export const ContactItem = ({ contact, onDeleteContact }) => {
 };
 
 
-ContactItem.propTypes = {
-  contact: PropTypes.shape({
-    id: PropTypes.string,
-    name: PropTypes.string,
-    number: PropTypes.string,
-  }).isRequired,
-  onDeleteContact: PropTypes.func.isRequired,
-};
